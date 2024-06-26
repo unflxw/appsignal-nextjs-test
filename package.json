@@ -11,7 +11,8 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "next": "14.2.4",
+    "@appsignal/nodejs": "^3.4.7"
   },
   "devDependencies": {
     "typescript": "^5",
