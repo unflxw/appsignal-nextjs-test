@@ -1,6 +1,6 @@
 export function register() {
   console.log("register() in instrumentation.js called!")
-  if (process.env.NEXT_RUNTIME === "nodejs") {
-    require("./appsignal.cjs");
-  }
+  console.log("NEXT_RUNTIME", process.env.NEXT_RUNTIME)
+
+  require("./appsignal.cjs");
 }
