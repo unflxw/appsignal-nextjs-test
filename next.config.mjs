@@ -5,6 +5,7 @@ const nextConfig = {
     // Add the following lines inside the object
     instrumentationHook: true,
     serverComponentsExternalPackages: ["@appsignal/nodejs"],
+    esmExternals: "loose"
   },
 };
 
