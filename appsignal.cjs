@@ -1,4 +1,4 @@
-import { Appsignal } from "@appsignal/nodejs";
+const { Appsignal } = require("@appsignal/nodejs");
 
 console.log("appsignal.cjs required!")
 
