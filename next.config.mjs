@@ -7,6 +7,12 @@ const nextConfig = {
     serverComponentsExternalPackages: ["@appsignal/nodejs"],
     esmExternals: "loose"
   },
+  webpack: (config) => {
+    config.externals = [...config.externals, {
+      '@appsignal/nodejs': "commonjs @appsignal/nodejs"
+    }];
+    return config;
+  },
 };
 
 export default nextConfig;
